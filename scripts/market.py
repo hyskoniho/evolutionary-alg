@@ -52,4 +52,6 @@ class Market:
 
 if __name__ == '__main__':
     m = Market()
-    print(m.random())
+    produto = m.random()
+    print(produto)	
+    produto.show()	
