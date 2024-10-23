@@ -29,25 +29,26 @@ class Produto:
     def __repr__(self) -> str:
         return f"<Produto(id={self.id}>"
         
-    def show(self) -> Image:
+    def show(self, popup: bool = True) -> Image:
         image: Image = Image.open(BytesIO(requests.get(fr"{self.image}").content))
-        image.show() # Show the image
+        if popup: image.show()
         return image
 
 class Market:
     def __init__(self, loc: str = r'.\data\produtos.csv'):
         self.df = pd.read_csv(loc, sep='|', encoding='utf-8')
         
-        self.products: dict = {}
+        self.products: list[Produto | None] = []
         for idx, row in self.df.iterrows():
-            self.products[row['id']] = Produto(row)
+            self.products.append(Produto(row))
         
-    def random(self, ignore_case: list[Produto | int | str] = []) -> int:
-        available: list[int] = [
-            key for key, value in self.products.items() 
-            if (key not in ignore_case) or (value not in ignore_case)
+    def random(self, ignore_case: list[Produto] = []) -> int:
+        available: list[Produto] = [
+            p for p in self.products 
+            if p not in ignore_case
         ]
-        product: Produto = self.products[random.choice(available)]
+        
+        product: Produto = random.choice(available)
         return product
 
 if __name__ == '__main__':
