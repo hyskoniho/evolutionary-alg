@@ -1,7 +1,7 @@
 import pandas as pd
 import random
 import requests
-from PIL import Image
+from PIL import Image, ImageDraw
 from io import BytesIO
 
 class Produto:
@@ -23,16 +23,36 @@ class Produto:
     def __eq__(self, other: 'Produto') -> bool:
         return self.id == other.id
     
+    def __hash__(self) -> int:
+        return hash(self.id)
+    
     def __str__(self) -> str:
         return f"Product Info\n{''.join([f'{key}: {var}\n' for key, var in vars(self).items()])}"
     
     def __repr__(self) -> str:
         return f"<Produto(id={self.id}>"
-        
+    
     def show(self, popup: bool = True) -> Image:
-        image: Image = Image.open(BytesIO(requests.get(fr"{self.image}").content))
-        if popup: image.show()
-        return image
+        try:
+            image: Image = Image.open(BytesIO(requests.get(self.image).content))
+            
+        except Exception as e:
+            error_image: Image = Image.new("RGB", (200, 100), "white")
+            draw: ImageDraw = ImageDraw.Draw(error_image)
+            draw.text((10, 40), "Error", fill="red")
+            image: Image = error_image 
+        
+        finally:
+            if popup:
+                image.show()
+                
+            return image
+
+        
+    # def show(self, popup: bool = True) -> Image:
+    #     image: Image = Image.open(BytesIO(requests.get(fr"{self.image}").content))
+    #     if popup: image.show()
+    #     return image
 
 class Market:
     def __init__(self, loc: str = r'.\data\produtos.csv'):
@@ -50,9 +70,15 @@ class Market:
         
         product: Produto = random.choice(available)
         return product
+    
+    def choice(self, id: int) -> Produto:
+        for product in self.products:
+            if product.id == id:
+                return product
+        return None
 
 if __name__ == '__main__':
     m = Market()
-    produto = m.random()
+    produto = m.choice(1624481)
     print(produto)	
     produto.show()	
