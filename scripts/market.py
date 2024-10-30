@@ -6,6 +6,7 @@ from io import BytesIO
 
 class Produto:
     def __init__(self, info: dict):
+        
         # Attributes:
         self.id: int = info['id']
         self.name: str = info['nome']
@@ -39,7 +40,7 @@ class Produto:
         except Exception as e:
             error_image: Image = Image.new("RGB", (200, 100), "white")
             draw: ImageDraw = ImageDraw.Draw(error_image)
-            draw.text((10, 40), "Error", fill="red")
+            draw.text((10, 40), f"Error!\n{self.name}", fill="red")
             image: Image = error_image 
         
         finally:
@@ -47,12 +48,6 @@ class Produto:
                 image.show()
                 
             return image
-
-        
-    # def show(self, popup: bool = True) -> Image:
-    #     image: Image = Image.open(BytesIO(requests.get(fr"{self.image}").content))
-    #     if popup: image.show()
-    #     return image
 
 class Market:
     def __init__(self, loc: str = r'.\data\produtos.csv'):
