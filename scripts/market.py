@@ -20,6 +20,7 @@ class Produto:
         self.height: float = info['alturaProduto']
         self.width: float = info['larguraProduto']
         self.depth: float = info['profundidadeProduto']
+        self.volume: float = self._volume()
         
     def __eq__(self, other: 'Produto') -> bool:
         return self.id == other.id
@@ -32,6 +33,9 @@ class Produto:
     
     def __repr__(self) -> str:
         return f"<Produto(id={self.id}>"
+    
+    def _volume(self) -> float:
+        return self.height * self.width * self.depth
     
     def show(self, popup: bool = True) -> Image:
         try:

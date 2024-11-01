@@ -1,86 +1,86 @@
-id;produto;valor
-1;arroz camil 5kg;29,69
-2;feijão carioca camil 1kg;5,95
-3;macarrão dona benta 500g;5,9
-4;óleo de cozinha liza;7,25
-5;sal 1kg;1,69
-6;açúcar união 1kg;3,8
-7;farinha de trigo dona benta 1kg;4,19
-8;café solúvel melita 40g;4,99
-9;leite em pó aurora 400g;12,9
-10;carne suína pernil 400g;10,9
-11;carne patinho 1kg;38,89
-12;peito de frango 1kg;21,99
-13;batata 1kg;6,49
-14;ovos (30 uni.);18,9
-15;azeite de oliva  extra virgem 500ml;38,9
-16;vinagre de maçã 750ml;7,5
-17;miojo;2
-18;bolacha doce;1,8
-19;suco em pó;0,89
-20;bolacha de água e sal;2,5
-21;batata chips 70g;12
-22;barra de chocolate;6,49
-23;whey protein 1kg;110
-24;papel higiênico 24 rolos;25,89
-25;desinfetante 5L;21,9
-26;cerveja 600ml;11,9
-27;água sanitária;10,9
-28;achocolatado 370g;7,79
-29;salgadinho bacon 130g;14,45
-30;enxaguante bucal 1,5L;39,9
-31;absorvente 32 unidades;11,6
-32;pasta de dente 90g;4,55
-33;água mineral 510ml;0,79
-34;lava roupa 2,4kg;25,9
-35;vassoura;9,9
-36;coco ralado 100g;2,49
-37;biscoito wager 125g;2,49
-38;danoninho ice 70g;2,99
-39;sorvete 1,3L;14,9
-40;molho de tomate 300g;1,19
-41;palmito pupunha 300g;16,29
-42;escova de dente 5 unidades;12,3
-43;milho verde 1,7kg;25,5
-44;milho de pipoca 500g;3,79
-45;goiabada 300g;2,99
-46;amendoim crocante 1kg;26,9
-47;requeijão cremoso light 500g;13,49
-48;azeitona 500g;18,39
-49;biscoito de polvilho 100g;3,69
-50;sal grosso 1kg;2,25
-51;canjica branca 500g;6,39
-52;mistura para pão francês 25kg;72,9
-53;seleta russa congelada 1kg;16,59
-54;escova de dente 1 unidade;2,15
-55;água de coco 1l;8,69
-56;saco de lixo 15L 60uni;7,45
-57;pão de forma 500g;4,99
-58;maçã 1kg;4,99
-59;pão de queijo2kg;24,9
-60;suco de uva integral 1,35L;14,59
-61;pão de forma integral 500g;6,99
-62;massa para pizza brotinho 300g;7,99
-63;brócolis congelado 1kg;13,29
-64;pão de hot dog 200g;4,79
-65;polpa de fruta morango 100g;2,65
-66;aparelho de depilar 2 uni.;5,45
-67;cotonete 100 uni.;7
-68;massa para lasanha 900g;10,9
-69;amacianta 2L;6,8
-70;atum sólido em óleo lata 170g;9,39
-71;pão de alho 400g;8,99
-72;alho triturado 3kg;35,5
-73;carvão vegetal 2,5kg;16,89
-74;ketchup 400g;6,49
-75;alho triturado 400g;8,49
-76;pimenta biquinho 400g;30,5
-77;massa para pastel 2kg;16,9
-78;açaí com guaraná 1,5l;29,9
-79;linguiça calabresa 1kg;24,5
-80;fígado bovino 400g;4,36
-81;linguiça toscana 5kg;91,25
-82;filé de coxa e sobrecoxa congelado 1kg;16,5
-83;linguiça calabresa 400g;11,99
-84;bacon 500g;11,95
-85;contra-filé bovino 400g;19,16
+id|nome|preco
+1|arroz camil 5kg|29.69
+2|feijï¿½o carioca camil 1kg|5.95
+3|macarrï¿½o dona benta 500g|5.9
+4|ï¿½leo de cozinha liza|7.25
+5|sal 1kg|1.69
+6|aï¿½ï¿½car uniï¿½o 1kg|3.8
+7|farinha de trigo dona benta 1kg|4.19
+8|cafï¿½ solï¿½vel melita 40g|4.99
+9|leite em pï¿½ aurora 400g|12.9
+10|carne suï¿½na pernil 400g|10.9
+11|carne patinho 1kg|38.89
+12|peito de frango 1kg|21.99
+13|batata 1kg|6.49
+14|ovos (30 uni.)|18.9
+15|azeite de oliva  extra virgem 500ml|38.9
+16|vinagre de maï¿½ï¿½ 750ml|7.5
+17|miojo|2
+18|bolacha doce|1.8
+19|suco em pï¿½|0.89
+20|bolacha de ï¿½gua e sal|2.5
+21|batata chips 70g|12
+22|barra de chocolate|6.49
+23|whey protein 1kg|110
+24|papel higiï¿½nico 24 rolos|25.89
+25|desinfetante 5L|21.9
+26|cerveja 600ml|11.9
+27|ï¿½gua sanitï¿½ria|10.9
+28|achocolatado 370g|7.79
+29|salgadinho bacon 130g|14.45
+30|enxaguante bucal 1.5L|39.9
+31|absorvente 32 unidades|11.6
+32|pasta de dente 90g|4.55
+33|ï¿½gua mineral 510ml|0.79
+34|lava roupa 2.4kg|25.9
+35|vassoura|9.9
+36|coco ralado 100g|2.49
+37|biscoito wager 125g|2.49
+38|danoninho ice 70g|2.99
+39|sorvete 1.3L|14.9
+40|molho de tomate 300g|1.19
+41|palmito pupunha 300g|16.29
+42|escova de dente 5 unidades|12.3
+43|milho verde 1.7kg|25.5
+44|milho de pipoca 500g|3.79
+45|goiabada 300g|2.99
+46|amendoim crocante 1kg|26.9
+47|requeijï¿½o cremoso light 500g|13.49
+48|azeitona 500g|18.39
+49|biscoito de polvilho 100g|3.69
+50|sal grosso 1kg|2.25
+51|canjica branca 500g|6.39
+52|mistura para pï¿½o francï¿½s 25kg|72.9
+53|seleta russa congelada 1kg|16.59
+54|escova de dente 1 unidade|2.15
+55|ï¿½gua de coco 1l|8.69
+56|saco de lixo 15L 60uni|7.45
+57|pï¿½o de forma 500g|4.99
+58|maï¿½ï¿½ 1kg|4.99
+59|pï¿½o de queijo2kg|24.9
+60|suco de uva integral 1.35L|14.59
+61|pï¿½o de forma integral 500g|6.99
+62|massa para pizza brotinho 300g|7.99
+63|brï¿½colis congelado 1kg|13.29
+64|pï¿½o de hot dog 200g|4.79
+65|polpa de fruta morango 100g|2.65
+66|aparelho de depilar 2 uni.|5.45
+67|cotonete 100 uni.|7
+68|massa para lasanha 900g|10.9
+69|amacianta 2L|6.8
+70|atum sï¿½lido em ï¿½leo lata 170g|9.39
+71|pï¿½o de alho 400g|8.99
+72|alho triturado 3kg|35.5
+73|carvï¿½o vegetal 2.5kg|16.89
+74|ketchup 400g|6.49
+75|alho triturado 400g|8.49
+76|pimenta biquinho 400g|30.5
+77|massa para pastel 2kg|16.9
+78|aï¿½aï¿½ com guaranï¿½ 1.5l|29.9
+79|linguiï¿½a calabresa 1kg|24.5
+80|fï¿½gado bovino 400g|4.36
+81|linguiï¿½a toscana 5kg|91.25
+82|filï¿½ de coxa e sobrecoxa congelado 1kg|16.5
+83|linguiï¿½a calabresa 400g|11.99
+84|bacon 500g|11.95
+85|contra-filï¿½ bovino 400g|19.16
