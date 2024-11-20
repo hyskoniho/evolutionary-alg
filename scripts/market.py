@@ -57,27 +57,27 @@ class Market:
     def __init__(self, loc: str = r'.\data\produtos.csv'):
         self.df = pd.read_csv(loc, sep='|', encoding='utf-8')
         
-        self.products: list[Produto | None] = []
+        self.products: dict[int : Produto] = {}
         for idx, row in self.df.iterrows():
-            self.products.append(Produto(row))
+            p: Produto = Produto(row)
+            self.products[p.id] = p
         
-    def random(self, ignore_case: list[Produto] = []) -> int:
-        available: list[Produto] = [
-            p for p in self.products 
+    def random(self, ignore_case: list[int] = []) -> int:
+        available: list[int] = [
+            p for p in list(self.products.keys())
             if p not in ignore_case
         ]
         
-        product: Produto = random.choice(available)
+        product: int = random.choice(available)
         return product
     
-    def choice(self, id: int) -> Produto:
-        for product in self.products:
-            if product.id == id:
-                return product
-        return None
+    def get(self, id: int) -> Produto:
+        if id in self.products: return self.products[id]
+        else: return None
 
 if __name__ == '__main__':
     m = Market()
-    produto = m.choice(1624481)
+    # produto = m.choice(1609288)
+    produto = m.random()
     print(produto)	
     produto.show()	
