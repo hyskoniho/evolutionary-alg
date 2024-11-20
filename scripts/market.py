@@ -61,6 +61,9 @@ class Market:
         for idx, row in self.df.iterrows():
             p: Produto = Produto(row)
             self.products[p.id] = p
+    
+    def __str__(self) -> str:
+        return f"Market Info\n{len(self.products)} products loaded."
         
     def random(self, ignore_case: list[int] = []) -> int:
         available: list[int] = [
@@ -77,7 +80,6 @@ class Market:
 
 if __name__ == '__main__':
     m = Market()
-    # produto = m.choice(1609288)
     produto = m.random()
     print(produto)	
     produto.show()	
